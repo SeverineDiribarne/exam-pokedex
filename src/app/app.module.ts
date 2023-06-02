@@ -6,15 +6,16 @@ import { AppComponent } from './app.component';
 import { FirePokemonListComponent } from './fire-pokemon-list/fire-pokemon-list.component';
 import { LightningPokemonListComponent } from './lightning-pokemon-list/lightning-pokemon-list.component';
 import { PlantPokemonListComponent } from './plant-pokemon-list/plant-pokemon-list.component';
-import { TypeComponent } from './type/type.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     FirePokemonListComponent,
     LightningPokemonListComponent,
-    PlantPokemonListComponent,
-    TypeComponent
+    PlantPokemonListComponent
+
+
   ],
   imports: [
     BrowserModule,

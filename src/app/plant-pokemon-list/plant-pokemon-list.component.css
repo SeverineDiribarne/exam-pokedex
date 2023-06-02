@@ -1,0 +1,14 @@
+/* PlantPokemonsComponent's private CSS styles */
+
+.plantPokemons li:hover{
+  color: var(--plant-pokemons-bg-color);
+  background-color: var(--pokemon-li-hover-bg-color);
+}
+
+.plantPokemons li.selected:hover{
+  background-color: var(--plant-pokemons-li-selected-hover-bg-color) !important;
+}
+
+.plantPokemons .badge{
+  background-color:var(--plant-pokemons-bg-color);
+}

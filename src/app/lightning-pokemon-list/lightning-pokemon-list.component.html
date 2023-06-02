@@ -1,3 +1,7 @@
-<ul>
-  <li *ngFor="let pokemon of lightningPokemons">{{pokemon}}</li>
+<ul class="pokemons lightningPokemons">
+  <li *ngFor="let lightningPokemon of lightningPokemons"[class.selected]="selectedLightningPokemon == lightningPokemon" (click)="selectLightningPokemon(lightningPokemon)">
+    <span class="badge">{{lightningPokemon.id}}</span>
+    {{lightningPokemon.name}}
+  </li>
 </ul>
+
