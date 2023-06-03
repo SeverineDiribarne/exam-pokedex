@@ -8,6 +8,7 @@ import Pokemon from '../types/pokemon.type';
 })
 export class PlantPokemonDetailsComponent implements OnInit {
   @Input() plantPokemon!: Pokemon;
+
   constructor() {}
   ngOnInit() {}
 }

@@ -1,6 +1,14 @@
 <ul class="pokemons firePokemons">
-  <li *ngFor="let firePokemon of firePokemons"[class.selected]="selectedFirePokemon == firePokemon" (click)="selectFirePokemon(firePokemon)">
-    <span class="badge">{{firePokemon.id}}</span>
-    {{firePokemon.name}}</li>
+  <li
+    *ngFor="let firePokemon of firePokemons"
+    [class.selected]="selectedFirePokemon == firePokemon"
+    (click)="selectFirePokemon(firePokemon)"
+  >
+    <span class="badge">{{ firePokemon.id }}</span>
+    {{ firePokemon.name }}
+  </li>
 </ul>
-<app-fire-pokemon-details *ngIf="selectedFirePokemon" [firePokemon]="selectedFirePokemon"></app-fire-pokemon-details>
+<app-fire-pokemon-details
+  *ngIf="selectedFirePokemon"
+  [firePokemon]="selectedFirePokemon"
+></app-fire-pokemon-details>

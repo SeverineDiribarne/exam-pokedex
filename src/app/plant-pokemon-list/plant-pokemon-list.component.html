@@ -1,8 +1,14 @@
 <ul class="pokemons plantPokemons">
-  <li *ngFor="let plantPokemon of plantPokemons"[class.selected]="selectedPlantPokemon == plantPokemon" (click)="selectPlantPokemon(plantPokemon)">
-    <span class="badge">{{plantPokemon.id}}</span>
-    {{plantPokemon.name}}
+  <li
+    *ngFor="let plantPokemon of plantPokemons"
+    [class.selected]="selectedPlantPokemon == plantPokemon"
+    (click)="selectPlantPokemon(plantPokemon)"
+  >
+    <span class="badge">{{ plantPokemon.id }}</span>
+    {{ plantPokemon.name }}
   </li>
 </ul>
-<app-plant-pokemon-details *ngIf="selectedPlantPokemon" [plantPokemon]="selectedPlantPokemon"></app-plant-pokemon-details>
-
+<app-plant-pokemon-details
+  *ngIf="selectedPlantPokemon"
+  [plantPokemon]="selectedPlantPokemon"
+></app-plant-pokemon-details>

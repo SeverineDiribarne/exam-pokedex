@@ -1,38 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
 
-:root{
-  --fire-pokemons-bg-color : hsl(17, 18%, 46%);
-  --lightning-pokemons-bg-color : hsl(55, 18%, 46%);
-  --plant-pokemons-bg-color :hsl(123, 18%, 46%);
-  --pokemon-color : hsl(0, 0%, 100%);
-  --pokemon-li-bg-color : hsl(0, 0%, 93%);
-  --pokemon-selected : hsl(198, 16%, 84%);
-  --pokemon-li-hover-bg-color :hsl(0, 0%, 87%);
-  --fire-pokemons-li-selected-hover-bg-color :hsl(17, 32%, 80%);
-  --lightning-pokemons-li-selected-hover-bg-color :hsl(55, 32%, 80%);
-  --plant-pokemons-li-selected-hover-bg-color :hsl(123, 32%, 80%);
+:root {
+  --fire-pokemons-bg-color: hsl(17, 18%, 46%);
+  --lightning-pokemons-bg-color: hsl(55, 18%, 46%);
+  --plant-pokemons-bg-color: hsl(123, 18%, 46%);
+  --pokemon-color: hsl(0, 0%, 100%);
+  --pokemon-li-bg-color: hsl(0, 0%, 93%);
+  --pokemon-selected: hsl(198, 16%, 84%);
+  --pokemon-li-hover-bg-color: hsl(0, 0%, 87%);
+  --fire-pokemons-li-selected-hover-bg-color: hsl(17, 32%, 80%);
+  --lightning-pokemons-li-selected-hover-bg-color: hsl(55, 32%, 80%);
+  --plant-pokemons-li-selected-hover-bg-color: hsl(123, 32%, 80%);
 
-
-  --title-color :rgb(138, 96, 96);
-  --subtitle-1-and-2-color :hsla(0, 0%, 27%, 1);
-  --body-input-button-color : hsla(0, 0%, 53%, 1)
+  --title-color: rgb(138, 96, 96);
+  --subtitle-1-and-2-color: hsla(0, 0%, 27%, 1);
+  --body-input-button-color: hsla(0, 0%, 53%, 1);
 }
 
 /* Application-wide Styles */
 
-h1{
-  color: var(--title-color) ;
+h1 {
+  color: var(--title-color);
   font-family: Times, Helvetica, Arial, sans-serif;
   font-size: 250%;
   text-align: center;
   border: 4px solid var(--title-color);
   border-radius: 15px;
-  padding : 0.5% 1.5% ;
-  margin : 0% 25%;
+  padding: 0.5% 1.5%;
+  margin: 0% 25%;
 }
 
-h2, h3 {
+h2,
+h3 {
   color: var(--subtitle-1-and-2-color);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
@@ -40,11 +40,13 @@ h2, h3 {
   text-decoration: underline;
 }
 
-body{
+body {
   margin: 2em;
 }
 
-body, input[type="text"], button {
+body,
+input[type="text"],
+button {
   color: var(--body-input-button-color);
   font-family: Cambria, Georgia;
 }
@@ -63,59 +65,59 @@ a {
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   background-color: var(--pokemon-selected);
 }
 
 /*Css common to firePokemons, lightningPokemons and plantPokemons*/
 
-.selected{
+.selected {
   background-color: var(--pokemon-selected) !important;
   color: var(--pokemon-color);
 }
 
-.pokemons{
+.pokemons {
   margin: 0 0 2em 0;
-  list-style-type : none;
+  list-style-type: none;
   padding: 0;
   width: 15em;
 }
 
-.pokemons li{
-  cursor : pointer;
-  position:relative;
+.pokemons li {
+  cursor: pointer;
+  position: relative;
   left: 0;
   background-color: var(--pokemon-li-bg-color);
-  margin: .5em;
-  padding: .3em 0;
+  margin: 0.5em;
+  padding: 0.3em 0;
   height: 1.6em;
   border-radius: 4px;
 }
 
-.pokemons li:hover{
-  left: .1em;
+.pokemons li:hover {
+  left: 0.1em;
 }
 
-.pokemons .text{
+.pokemons .text {
   position: relative;
   top: -3px;
 }
 
-.pokemons li.selected:hover{
+.pokemons li.selected:hover {
   color: var(--pokemon-color);
 }
 
-.pokemons .badge{
+.pokemons .badge {
   display: inline-block;
   font-size: small;
   color: var(--pokemon-color);
   padding: 0.8em 0.7em 0 0.7em;
   line-height: 1em;
-  position : relative;
+  position: relative;
   left: -1px;
   top: -4px;
   height: 1.8em;
-  margin-right: .8em;
+  margin-right: 0.8em;
   border-radius: 4px 0 0 4px;
 }
 

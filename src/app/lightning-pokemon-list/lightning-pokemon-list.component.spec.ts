@@ -8,7 +8,7 @@ describe('LightningPokemonListComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [LightningPokemonListComponent]
+      declarations: [LightningPokemonListComponent],
     });
     fixture = TestBed.createComponent(LightningPokemonListComponent);
     component = fixture.componentInstance;

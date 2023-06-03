@@ -8,7 +8,7 @@ describe('LightningPokemonDetailsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [LightningPokemonDetailsComponent]
+      declarations: [LightningPokemonDetailsComponent],
     });
     fixture = TestBed.createComponent(LightningPokemonDetailsComponent);
     component = fixture.componentInstance;

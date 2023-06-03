@@ -10,8 +10,6 @@ import { FirePokemonDetailsComponent } from './fire-pokemon-details/fire-pokemon
 import { LightningPokemonDetailsComponent } from './lightning-pokemon-details/lightning-pokemon-details.component';
 import { PlantPokemonDetailsComponent } from './plant-pokemon-details/plant-pokemon-details.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +20,8 @@ import { PlantPokemonDetailsComponent } from './plant-pokemon-details/plant-poke
     PlantPokemonListComponent,
     PlantPokemonDetailsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

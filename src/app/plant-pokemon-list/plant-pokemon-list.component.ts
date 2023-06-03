@@ -7,7 +7,6 @@ import Pokemon from '../types/pokemon.type';
   styleUrls: ['./plant-pokemon-list.component.css'],
 })
 export class PlantPokemonListComponent implements OnInit {
-
   plantPokemons: Pokemon[] = [
     {
       id: 1,
@@ -15,17 +14,17 @@ export class PlantPokemonListComponent implements OnInit {
       size: '0.5m',
       evolution: 'Grovyle',
       weakness: [
-        {id :1, name: "Fire"},
-        {id :2, name: "Ice"},
-        {id :3, name: "Bug"},
-        {id :4, name: "Poison"},
-        {id :5, name: "Flying"}
-    ],
+        { id: 1, name: 'Fire' },
+        { id: 2, name: 'Ice' },
+        { id: 3, name: 'Bug' },
+        { id: 4, name: 'Poison' },
+        { id: 5, name: 'Flying' },
+      ],
       attack: [
-        {id :1, name: "Mega Drain"},
-        {id :2, name: "Giga Drain"},
-        {id :3, name: "Energy Ball"},
-      ]
+        { id: 1, name: 'Mega Drain' },
+        { id: 2, name: 'Giga Drain' },
+        { id: 3, name: 'Energy Ball' },
+      ],
     },
     {
       id: 2,
@@ -33,17 +32,17 @@ export class PlantPokemonListComponent implements OnInit {
       size: '0.7m',
       evolution: 'Ivysaur',
       weakness: [
-        {id :1, name: "Fire"},
-        {id :2, name: "Ice"},
-        {id :3, name: "Bug"},
-        {id :4, name: "Poison"},
-        {id :5, name: "Flying"}
-    ],
+        { id: 1, name: 'Fire' },
+        { id: 2, name: 'Ice' },
+        { id: 3, name: 'Bug' },
+        { id: 4, name: 'Poison' },
+        { id: 5, name: 'Flying' },
+      ],
       attack: [
-        {id :1, name: "Vine Whip"},
-        {id :2, name: "Razor Leaf"},
-        {id :3, name: "Solar Beam"},
-      ]
+        { id: 1, name: 'Vine Whip' },
+        { id: 2, name: 'Razor Leaf' },
+        { id: 3, name: 'Solar Beam' },
+      ],
     },
     {
       id: 3,
@@ -51,17 +50,17 @@ export class PlantPokemonListComponent implements OnInit {
       size: '0.9m',
       evolution: 'Bayleef',
       weakness: [
-        {id :1, name: "Fire"},
-        {id :2, name: "Ice"},
-        {id :3, name: "Bug"},
-        {id :4, name: "Poison"},
-        {id :5, name: "Flying"}
-    ],
+        { id: 1, name: 'Fire' },
+        { id: 2, name: 'Ice' },
+        { id: 3, name: 'Bug' },
+        { id: 4, name: 'Poison' },
+        { id: 5, name: 'Flying' },
+      ],
       attack: [
-        {id :1, name: "Razor Leaf"},
-        {id :2, name: "Magical Leaf"},
-        {id :3, name: "Solar Beam"},
-      ]
+        { id: 1, name: 'Razor Leaf' },
+        { id: 2, name: 'Magical Leaf' },
+        { id: 3, name: 'Solar Beam' },
+      ],
     },
   ];
 
@@ -69,7 +68,8 @@ export class PlantPokemonListComponent implements OnInit {
   ngOnInit() {}
 
   selectedPlantPokemon!: Pokemon;
-  selectPlantPokemon(plantPokemon: Pokemon){
+
+  selectPlantPokemon(plantPokemon: Pokemon) {
     this.selectedPlantPokemon = plantPokemon;
   }
 }

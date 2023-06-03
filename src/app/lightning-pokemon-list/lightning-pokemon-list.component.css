@@ -1,14 +1,16 @@
 /* LightningPokemonsComponent's private CSS styles */
 
-.lightningPokemons li:hover{
+.lightningPokemons li:hover {
   color: var(--lightning-pokemons-bg-color);
   background-color: var(--pokemon-li-hover-bg-color);
 }
 
-.lightningPokemons li.selected:hover{
-  background-color: var(--lightning-pokemons-li-selected-hover-bg-color) !important;
+.lightningPokemons li.selected:hover {
+  background-color: var(
+    --lightning-pokemons-li-selected-hover-bg-color
+  ) !important;
 }
 
-.lightningPokemons .badge{
-  background-color:var(--lightning-pokemons-bg-color);
+.lightningPokemons .badge {
+  background-color: var(--lightning-pokemons-bg-color);
 }
