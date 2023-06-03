@@ -1,0 +1,11 @@
+h2 span {
+  font-size: 0.7em;
+}
+
+.specificity {
+  padding-bottom: 1.1rem;
+}
+
+.underline {
+  text-decoration: underline;
+}

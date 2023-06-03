@@ -1,0 +1,16 @@
+<h2>
+  Détails de {{ firePokemon.name | uppercase }}
+  <span>(Id = {{ firePokemon.id }})</span> :
+</h2>
+<div class="specificity">
+  <p>His size : {{ firePokemon.size }}</p>
+  <p>His evolution : {{ firePokemon.evolution }}</p>
+  <p class="underline">His weakness :</p>
+  <div *ngFor="let weakness of firePokemon.weakness">
+    n° {{ weakness.id }} : {{ weakness.name }}
+  </div>
+  <p class="underline">His attack :</p>
+  <div *ngFor="let attack of firePokemon.attack">
+    n° {{ attack.id }} : {{ attack.name }}
+  </div>
+</div>

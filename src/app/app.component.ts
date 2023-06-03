@@ -8,6 +8,6 @@ let pokemonCount = 2;
 })
 export class AppComponent {
 
-  title = `votre pokédex`;
+  title = `your pokedex`;
   titleStyle = {'font-family' : 'Times', 'font-size': '2rem'};
 }

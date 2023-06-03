@@ -1,0 +1,37 @@
+<h2>
+  Détails de {{ lightningPokemon.name | uppercase }}
+  <span>(Id = {{ lightningPokemon.id }})</span> :
+</h2>
+<div class="specificity">
+  <p>His size : {{ lightningPokemon.size }}</p>
+  <p>His evolution : {{ lightningPokemon.evolution }}</p>
+  <p class="underline">His weakness :</p>
+  <div *ngFor="let weakness of lightningPokemon.weakness">
+    n° {{ weakness.id }} : {{ weakness.name }}
+  </div>
+  <p class="underline">His attack :</p>
+  <div *ngFor="let attack of lightningPokemon.attack">
+    n° {{ attack.id }} : {{ attack.name }}
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
