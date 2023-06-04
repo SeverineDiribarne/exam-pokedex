@@ -1,5 +1,21 @@
 /* FirePokemonsComponent's private CSS styles */
 
+.firePokemons{
+  position:relative;
+}
+.firePokemons:before {
+  content:"";
+  display:block;
+  position :absolute;
+  left:-50px;
+  top: -10px;
+  width: 37px;
+  height: 51px;
+  background-image: url("../../assets/images/feu.png");
+  background-size: cover;
+  z-index:1;
+}
+
 .firePokemons li:hover {
   color: var(--fire-pokemons-bg-color);
   background-color: var(--pokemon-li-hover-bg-color);
@@ -12,3 +28,4 @@
 .firePokemons .badge {
   background-color: var(--fire-pokemons-bg-color);
 }
+

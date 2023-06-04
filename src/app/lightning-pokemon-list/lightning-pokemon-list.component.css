@@ -1,5 +1,21 @@
 /* LightningPokemonsComponent's private CSS styles */
 
+.lightningPokemons{
+  position:relative;
+}
+.lightningPokemons:before {
+  content:"";
+  display:block;
+  position :absolute;
+  left:-55px;
+  top: -5px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../../assets/images/foudre.png");
+  background-size: cover;
+  z-index:1;
+}
+
 .lightningPokemons li:hover {
   color: var(--lightning-pokemons-bg-color);
   background-color: var(--pokemon-li-hover-bg-color);
