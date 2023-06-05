@@ -5,9 +5,13 @@
 .float-right{
   position:absolute;
   right:830px;
-  top : 5px;
+top:0px
 }
-
+.float-left{
+  position:absolute;
+  left:330px;
+ top:0px;
+}
 .firePokemons{
   position:relative;
 }

@@ -5,7 +5,12 @@
 .float-right{
   position:absolute;
   right: 60px;
-  top : -302px;
+  top : -307.5px;
+}
+.float-left{
+  position:absolute;
+  left: 1100px;
+  top : -307.5px;
 }
 
 .plantPokemons{

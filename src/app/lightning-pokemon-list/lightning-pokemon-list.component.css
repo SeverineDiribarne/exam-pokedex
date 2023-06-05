@@ -5,7 +5,12 @@
 .float-right{
   position:absolute;
   right:445px;
-  top : -149px;
+  top : -153.5px;
+}
+.float-left{
+  position:absolute;
+  left:715px;
+  top : -153.5px;
 }
 .lightningPokemons{
   position:relative;
