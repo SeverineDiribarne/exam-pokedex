@@ -1,27 +1,28 @@
 .card{
   border : 3px solid black;
-  border-radius: 20px;
-  width: 400px;
+  border-radius: 1em;
+  width: 350px;
+  height :540px;
 }
 .card h2{
   text-align: center;
   border:3px solid black;
   border-radius: 20px 20px 0 0;
-  padding-top: 20px;
+  padding-top: 1em;
 }
 .card .badge {
   display: inline-block;
-  font-size: xlarge;
+  font-size: 1.4em;
   color: black;
   padding: 0.5em 0.5em 0.5em 0.5em;
   line-height: 1em;
   position: relative;
-  left: -2px;
+  left: -2.5px;
   top: -24px;
   height: 1.5em;
-  width: 15.62em;
-  margin-right: 0.8em;
-  border-radius: 20px 20PX 0 0;
+  width: 328px;
+  margin-right: 0.5em;
+  border-radius: 20px 20px 0 0;
   background-color: var( --lightning-pokemons-li-selected-hover-bg-color);
 }
 h2 span {
@@ -33,28 +34,33 @@ h2 span {
 }
 
 .size, .evolution , .weakness, .attack {
-  border: 2px solid var(--lightning-pokemons-bg-color);
+  border: 0.1em solid var(--lightning-pokemons-bg-color);
   background-color: var(--lightning-pokemons-bg-color);
   color:white;
-  border-radius: 10px;
-  padding-left: 10px;
+  border-radius: 20px;
+  padding: 0.2em;
   width: 120px;
-  margin-left: 130px;
+  margin-left: 7em;
   text-align: center;
 }
+
+.attack{
+  margin-top:90px;
+  }
+
 .size-answer{
 color:black;
-padding-left : 175px;
+padding-left : 9.5em;
 }
 .evolution-answer{
   color:black;
-  padding-left : 165px;
+  padding-left : 9.3em;
 }
 .weakness-answers {
   color:black;
-  padding-left : 165px;
+  padding-left : 9.3em;
 }
 .attack-answers{
   color:black;
-  padding-left : 150px;
+  padding-left : 8.5em;
 }

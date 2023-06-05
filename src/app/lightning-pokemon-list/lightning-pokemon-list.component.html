@@ -1,4 +1,4 @@
-
+<div class="container">
 <ul class="pokemons lightningPokemons">
   <li
     *ngFor="let lightningPokemon of lightningPokemons"
@@ -9,8 +9,6 @@
     {{ lightningPokemon.name }}
   </li>
 </ul>
-<app-lightning-pokemon-details
-  *ngIf="selectedLightningPokemon"
-  [lightningPokemon]="selectedLightningPokemon"
-></app-lightning-pokemon-details>
-
+<app-lightning-pokemon-details class="float-right" *ngIf="selectedLightningPokemon" [lightningPokemon]="selectedLightningPokemon">
+</app-lightning-pokemon-details>
+</div>

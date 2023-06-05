@@ -1,4 +1,13 @@
 /* PlantPokemonsComponent's private CSS styles */
+.container{
+  position: relative;
+}
+.float-right{
+  position:absolute;
+  right: 60px;
+  top : -304px;
+}
+
 .plantPokemons{
   position:relative;
 

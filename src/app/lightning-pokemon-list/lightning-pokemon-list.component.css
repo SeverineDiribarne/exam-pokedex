@@ -1,5 +1,12 @@
 /* LightningPokemonsComponent's private CSS styles */
-
+.container{
+  position: relative;
+}
+.float-right{
+  position:absolute;
+  right:445px;
+  top : -149px;
+}
 .lightningPokemons{
   position:relative;
 }

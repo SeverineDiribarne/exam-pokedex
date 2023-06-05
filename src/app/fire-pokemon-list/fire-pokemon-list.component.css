@@ -1,4 +1,12 @@
 /* FirePokemonsComponent's private CSS styles */
+.container{
+  position: relative;
+}
+.float-right{
+  position:absolute;
+  right:830px;
+  top : 5px;
+}
 
 .firePokemons{
   position:relative;
