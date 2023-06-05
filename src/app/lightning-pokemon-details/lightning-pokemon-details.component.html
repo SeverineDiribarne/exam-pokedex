@@ -1,16 +1,20 @@
-<h2>
+<div class="card">
+<h2 class="badge">
   Détails de {{ lightningPokemon.name | uppercase }}
   <span>(Id = {{ lightningPokemon.id }})</span> :
 </h2>
 <div class="specificity">
-  <p>His size : {{ lightningPokemon.size }}</p>
-  <p>His evolution : {{ lightningPokemon.evolution }}</p>
-  <p class="underline">His weakness :</p>
-  <div *ngFor="let weakness of lightningPokemon.weakness">
-    n° {{ weakness.id }} : {{ weakness.name }}
+  <p class="size">His size</p>
+  <p class="size-answer">{{ lightningPokemon.size }}</p>
+  <p class="evolution">His evolution</p>
+  <p class="evolution-answer">{{ lightningPokemon.evolution }}</p>
+  <p class="weakness">His weakness</p>
+  <div class="weakness-answers" *ngFor="let weakness of lightningPokemon.weakness">
+   {{ weakness.name }}
   </div>
-  <p class="underline">His attack :</p>
-  <div *ngFor="let attack of lightningPokemon.attack">
-    n° {{ attack.id }} : {{ attack.name }}
+  <p class="attack">His attack</p>
+  <div class="attack-answers" *ngFor="let attack of lightningPokemon.attack">
+   {{ attack.name }}
   </div>
+</div>
 </div>

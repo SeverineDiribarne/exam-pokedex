@@ -1,16 +1,20 @@
-<h2>
-  Détails de {{ plantPokemon.name | uppercase }}
-  <span>(Id = {{ plantPokemon.id }})</span> :
-</h2>
-<div class="specificity">
-  <p>His size : {{ plantPokemon.size }}</p>
-  <p>His evolution : {{ plantPokemon.evolution }}</p>
-  <p class="underline">His weakness :</p>
-  <div *ngFor="let weakness of plantPokemon.weakness">
-    n° {{ weakness.id }} : {{ weakness.name }}
-  </div>
-  <p class="underline">His attack :</p>
-  <div *ngFor="let attack of plantPokemon.attack">
-    n° {{ attack.id }} : {{ attack.name }}
+<div class="card">
+  <h2 class="badge">
+    Détails de {{ plantPokemon.name | uppercase }}
+    <span>(Id = {{ plantPokemon.id }})</span> :
+  </h2>
+  <div class="specificity">
+    <p class="size">His size</p>
+    <p class="size-answer">{{ plantPokemon.size }}</p>
+    <p class="evolution">His evolution</p>
+    <p class="evolution-answer">{{ plantPokemon.evolution }}</p>
+    <p class="weakness">His weakness</p>
+    <div class="weakness-answers" *ngFor="let weakness of plantPokemon.weakness">
+      {{ weakness.name }}
+    </div>
+    <p class="attack">His attack</p>
+    <div class="attack-answers" *ngFor="let attack of plantPokemon.attack">
+     {{ attack.name }}
+    </div>
   </div>
 </div>

@@ -1,3 +1,29 @@
+.card{
+  border : 3px solid black;
+  border-radius: 20px;
+  width: 400px;
+}
+.card h2{
+  text-align: center;
+  border:3px solid black;
+  border-radius: 20px 20px 0 0;
+  padding-top: 20px;
+}
+.card .badge {
+  display: inline-block;
+  font-size: xlarge;
+  color: black;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  line-height: 1em;
+  position: relative;
+  left: -2px;
+  top: -24px;
+  height: 1.5em;
+  width: 15.62em;
+  margin-right: 0.8em;
+  border-radius: 20px 20PX 0 0;
+  background-color: var( --plant-pokemons-li-selected-hover-bg-color);
+}
 h2 span {
   font-size: 0.7em;
 }
@@ -6,6 +32,29 @@ h2 span {
   padding-bottom: 1.1rem;
 }
 
-.underline {
-  text-decoration: underline;
+.size, .evolution , .weakness, .attack {
+  border: 2px solid var(--plant-pokemons-bg-color);
+  background-color: var(--plant-pokemons-bg-color);
+  color:white;
+  border-radius: 10px;
+  padding-left: 10px;
+  width: 120px;
+  margin-left: 130px;
+  text-align: center;
+}
+.size-answer{
+color:black;
+padding-left : 175px;
+}
+.evolution-answer{
+  color:black;
+  padding-left : 165px;
+}
+.weakness-answers {
+  color:black;
+  padding-left : 165px;
+}
+.attack-answers{
+  color:black;
+  padding-left : 150px;
 }
